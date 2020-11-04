@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Sirin+Stencil");
+@import url("//basehold.it/24");
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+html {
+  font-family: "Sirin Stencil";
+  font-size: 1em;   /* orig--> 16px, 16px/16 = 1em */
+  color: rgb(0,0,0);
+  line-height: 1.5em;   /* orig--> 24px, 24px/16 = 1.5em */
+  background: url("../assets/img/black-background.jpeg");
+  background-repeat: repeat;
+  max-width: 100%;
+
+}
+
+@keyframes fadeInLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.header {
+  background: linear-gradient(353deg, #d9039f, #7b06f2, #06c7f2);
+  padding-top: 0.15em;
+  height: auto;
+  animation: fadeInLoad 2.5s;
+}
+
+.navbar {
+  max-width: 100%;
+  height: 12em;
+  border-radius: 3.75em;
+  background: url("../assets/img/black-background.jpeg");
+  margin-left: 0.15em;
+  margin-right: 0.13em;
+  animation: fadeInLoad 2s;
+}
+
+#site-heading {
+  font: "Sirin Stencil";
+  color: rgb(255,255,255);
+  font-size: 1.75em;
+  padding-top: 0.65em;
+  text-align: center;
+}
+
+.nav-item {
+  font-family: Lora;
+  font-size: 1em;
+  color: rgb(255,255,255);
+  margin-top: 1em;
+  margin-left: 3.75em;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: #7b06f2;
+  margin-right: 3em;
+}
+
+.nav-link {
+  font-family: verdana;
+  font-size: 1em;
+  text-decoration: none;
+  color: #FC0FC0;
+}
+
+#catch-phrase {
+  text-align: center;
+  font-family: "Sirin Stencil";
+  font-size: 2.5em;
+  line-height: normal;
+  margin-top: 1.4em;
+  padding-bottom: 1.5em;
+  color: rgb(230,230,230);
+}
+
+
+#about-heading {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: "Sirin Stencil";
+  font-size: 2em;
+  color: rgb(255,255,255);
+  text-decoration: underline;
+  padding-bottom: 0.95em;
+}
+
+#content {
+  text-align: justify;
+  padding: 1.25em;
+  padding-bottom: 3em;
+  background: url("../assets/img/black-background.jpeg");
+  color: rgb(170,170,170);
+  animation: fadeInLoad 5s;
+}
+
+#footer {
+  font-family: Lora;
+  background-color: rgb(252,15,192,75%);
+  font-weight: 450;
+  padding-left: 1em;
+}
+
+@media screen and (min-width: 36em) {
+  .navbar {
+    height: 4em;
+    display: inline-flex;
+    width: 99.25%;
+  }
+
+  #site-heading {
+    text-align: left;
+    margin-left: 1em;
+    font-size: 1.75em;
+    border-right-style: solid;
+    border-right-width: thin;
+    padding-right: 1em;
+  }
+
+  .nav-item {
+    margin-left: 1em;
+    text-decoration: underline;
+    margin-bottom: 1em;
+  }
+
+  .nav {
+    display: inline-flex;
+  }
+
+  #catch-phrase {
+    margin-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+  }
+
+  #about-heading {
+    padding-top: 1.25em;
+    margin-bottom: 1.5em;
+  }
+
+  .article-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .blog-article {
+    font-family: verdana;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    border-right-style: solid;
+    border-right-width: medium;
+    margin-left: 16%;
+    margin-right: 16%;
+    border-radius: 2em;
+    border-color: #7b06f2;
+    margin-bottom: 6em;
+    padding: 2em;
+    box-shadow: 6em green;
+  }
+
+  #blogpage-heading {
+    font-size: 1em;
+    margin-left: 2em;
+    margin-top: 2em;
+    padding-bottom: 3em;
+    color: rgb(140,140,140);
+  }
+
+  #blog-title {
+    padding-bottom: 0.8em;
+    font-size: 2.5em;
+    font-family: "Sirin Stencil";
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color: #06c7f2;
+    margin-right: 70%;
+    color: #d9039f;
+  }
+
+  .article-title {
+    font-family: "Sirin Stencil";
+    font-size: 1.7em;
+    padding-bottom: 0.65em;
+    color: #06c7f2;
+    border-bottom: medium solid #d9039f;
+    margin-bottom: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .placeholder-text {
+    text-align: justify;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 1.5em;
+    color: rgb(165,165,165);
+  }
+
+  .blog-article:hover {
+    transition: all 0.2s;
+    transform: scale(1.05);
+  }
+
+}
+
+@media screen and (min-width: 56.25em) {
+  #catch-phrase {
+    margin-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  #about-paragraph {
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+
+  .notice {
+    padding-top: 1em;
+    padding-left: 7em;
+    padding-right: 7em;
+    text-decoration: underline;
+  }
+
+  .blog-article {
+    font-family: verdana;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    border-right-style: solid;
+    border-right-width: medium;
+    margin-left: 16%;
+    margin-right: 16%;
+    border-radius: 2em;
+    border-color: #7b06f2;
+    margin-bottom: 6em;
+    padding: 2em;
+    box-shadow: 6em green;
+  }
+
+  #blogpage-heading {
+    font-size: 1em;
+    margin-left: 2em;
+    margin-top: 2em;
+    padding-bottom: 3em;
+    color: rgb(140,140,140);
+  }
+
+  #blog-title {
+    padding-bottom: 0.8em;
+    font-size: 2.5em;
+    font-family: "Sirin Stencil";
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color: #06c7f2;
+    margin-right: 70%;
+    color: #d9039f;
+  }
+
+  .article-title {
+    font-family: "Sirin Stencil";
+    font-size: 1.7em;
+    padding-bottom: 0.65em;
+    color: #06c7f2;
+    border-bottom: medium solid #d9039f;
+    margin-bottom: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .placeholder-text {
+    text-align: justify;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 1.5em;
+    color: rgb(165,165,165);
+  }
+
+  .article-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #page-heading-one {
+    font-family: "Sirin Stencil";
+    font-size: 2em;
+    color: #d9039f;
+    margin-left: 2em;
+    margin-top: 2em;
+    display: inline;
+    border-bottom: medium solid #06c7f2;
+  }
+
+  #headshot {
+    width: 5%;
+    margin-left: 2em;
+    margin-top: 2em;
+    border: thick solid #d9039f;
+  }
+
+  #page-heading-two {
+    margin-left: 7.5em;
+    margin-top: 2em;
+    color: rgb(190,190,190);
+    font-size: 1.7em;
+    border-bottom: solid medium #d9039f;
+    padding-bottom: 1em;
+    margin-right: 25%;
+    font-family: "Sirin Stencil";
+  }
+
+  #personal-profile, #education, #project-experience, #technical-skills, #language-section, #contact-details {
+    font-family: "Sirin Stencil";
+    font-size: 1em;
+    color: rgb(190,190,190);
+    margin-left: 15.5em;
+    margin-top: 2em;
+    margin-right: 25%;
+    margin-bottom: 2em;
+    text-align: justify;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-family: "Sirin Stencil";
+    text-decoration: underline;
+    text-decoration-color: #06c7f2;
+    margin-bottom: 1em;
+
+  }
+
+  .blog-article:hover {
+    transition: all 0.2s;
+    transform: scale(1.05);
+  }
+
+}
+
+/*--------------End of Media Screen---------------*/
+
+#page-heading-one {
+  font-family: "Sirin Stencil";
+  font-size: 1.45em;
+  color: #d9039f;
+  margin-left: 0.5em;
+  margin-top: 2em;
+  display: inline;
+  border-bottom: medium solid #06c7f2;
+}
+
+#headshot {
+  width: 6em;
+  margin-left: 1em;
+  margin-top: 2em;
+  border: medium solid #d9039f;
+}
+
+#page-heading-two {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 2em;
+  color: rgb(190,190,190);
+  font-size: 1.7em;
+  border-bottom: solid medium #d9039f;
+  padding-bottom: 0.65em;
+  margin-right: 25%;
+  font-family: "Sirin Stencil";
+}
+
+#personal-profile, #education, #project-experience, #technical-skills, #language-section, #contact-details {
+  font-family: "Sirin Stencil";
+  font-size: 1em;
+  color: rgb(190,190,190);
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-right: 2em;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 2em;
+  font-family: "Sirin Stencil";
+  text-decoration: underline;
+  text-decoration-color: #06c7f2;
+  margin-bottom: 1em;
+}
+
+
+.article-image {
+  border: double thick #06c7f2;
+  box-shadow: 0 0 5em rgba(255, 255, 255, 0.5);
+  filter: brightness(70%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.blog-article {
+  font-family: verdana;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  border-right-style: solid;
+  border-right-width: medium;
+  margin-left: 16%;
+  margin-right: 16%;
+  border-radius: 2em;
+  border-color: #7b06f2;
+  margin-bottom: 6em;
+  padding: 2em;
+  box-shadow: 6em green;
+}
+
+#blogpage-heading {
+  font-size: 0.75em;
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-bottom: 3em;
+  color: rgb(140,140,140);
+}
+
+#blog-title {
+  padding-bottom: 0.8em;
+  font-size: 2.5em;
+  font-family: "Sirin Stencil";
+  border-bottom-width: thick;
+  border-bottom-style: solid;
+  border-bottom-color: #06c7f2;
+  margin-right: 70%;
+  color: #d9039f;
+}
+
+.article-title {
+  font-family: "Sirin Stencil";
+  font-size: 1.25em;
+  padding-bottom: 0.65em;
+  color: #06c7f2;
+  border-bottom: medium solid #d9039f;
+  margin-bottom: 1em;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.placeholder-text {
+  font-size: 0.85em;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5em;
+  color: rgb(165,165,165);
+}
+
+.active {
+  font-size: 1.2em;
+  color: #06c7f2;
+}
+
+.nav-link:hover {
+  color: #06c7f2;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+h4 {
+  padding-top: 1em;
+}
+
+#site-heading:hover {
+  color: #06c7f2;
+}
