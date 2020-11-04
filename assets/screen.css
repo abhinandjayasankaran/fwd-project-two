@@ -36,72 +36,72 @@ html {
 
 .header {
   background: linear-gradient(353deg, #d9039f, #7b06f2, #06c7f2);
-  padding-top: 0.15em;
+  padding-top: 0.15em; /* orig--> 2.4px, 2.4px/16 = em */
   height: auto;
   animation: fadeInLoad 2.5s;
 }
 
 .navbar {
   max-width: 100%;
-  height: 12em;
-  border-radius: 3.75em;
+  height: 12em; /* orig--> 192px, 192px/16 = em */
+  border-radius: 3.75em; /* orig--> 60px, 60px/16 = 3.75em */
   background: url("../assets/img/black-background.jpeg");
-  margin-left: 0.15em;
-  margin-right: 0.13em;
+  margin-left: 0.15em; /* orig--> 2.4px, 2.4px/16 = 0.15em */
+  margin-right: 0.13em; /* orig--> 2.0px, 2.0px/16 = 0.13em */
   animation: fadeInLoad 2s;
 }
 
 #site-heading {
   font: "Sirin Stencil", sans-serif;
   color: rgb(255,255,255);
-  font-size: 1.75em;
-  padding-top: 0.65em;
+  font-size: 1.75em; /* orig--> 28px, 28px/16 = 1.75em */
+  padding-top: 0.65em; /* orig--> 10.4px, 10.4px/16 = 0.65em */
   text-align: center;
 }
 
 .nav-item {
   font-family: Lora, sans-serif;
-  font-size: 1em;
+  font-size: 1em; /* orig--> 16px, 16px/16 = 1em */
   color: rgb(255,255,255);
-  margin-top: 1em;
-  margin-left: 3.75em;
+  margin-top: 1em; /* orig--> 16px, 16px/16 = 1em */
+  margin-left: 3.75em; /* orig--> 60px, 60px/16 = 3.75em */
   border-bottom-style: solid;
   border-bottom-width: medium;
   border-color: #7b06f2;
-  margin-right: 3em;
+  margin-right: 3em; /* orig--> 48px, 48px/16 = 3em */
 }
 
 .nav-link {
   font-family: verdana, sans-serif;
-  font-size: 1em;
+  font-size: 1em; /* orig--> 16px, 16px/16 = 1em */
   color: #FC0FC0;
 }
 
 #catch-phrase {
   text-align: center;
   font-family: "Sirin Stencil", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5em; /* orig--> 40px, 40px/16 = 2.5em */
   line-height: normal;
-  margin-top: 1.4em;
-  padding-bottom: 1.5em;
+  margin-top: 1.4em; /* orig--> 22.4px, 22.4px/16 = 1.4em */
+  padding-bottom: 1.5em; /* orig--> 24px, 24px/16 = 1.5em */
   color: rgb(230,230,230);
 }
 
 
 #about-heading {
   text-align: center;
-  margin-top: 0.75em;
+  margin-top: 0.75em; /* orig--> 12px, 12px/16 = 0.75em */
   font-family: "Sirin Stencil", sans-serif;
-  font-size: 2em;
+  font-size: 2em; /* orig--> 32px, 32px/16 = 2em */
   color: rgb(255,255,255);
   text-decoration: underline;
-  padding-bottom: 0.95em;
+  padding-bottom: 0.95em; /* orig--> 15.2px, 15.2px/16 = 0.95em */
 }
 
 #content {
   text-align: justify;
-  padding: 1.25em;
-  padding-bottom: 3em;
+  padding: 1.25em; /* orig--> 20px, 20px/16 = 1.25em */
+  padding-bottom: 3em; /* orig--> 48px, 48px/16 = 3em */
   background: url("../assets/img/black-background.jpeg");
   color: rgb(170,170,170);
   animation: fadeInLoad 5s;
@@ -111,28 +111,28 @@ html {
   font-family: Lora, sans-serif;
   background-color: rgb(252,15,192,75%);
   font-weight: 450;
-  padding-left: 1em;
+  padding-left: 1em; /* orig--> 16px, 16px/16 = 1em */
 }
 
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 36em) { /* orig--> 576px, 576px/16 = 36em */
   .navbar {
-    height: 4em;
+    height: 4em; /* orig--> 64px, 64px/16 = 4em */
     display: inline-flex;
     width: 99.25%;
   }
 
   #site-heading {
     text-align: left;
-    margin-left: 1em;
-    font-size: 1.75em;
+    margin-left: 1em; /* orig--> 16px, 16px/16 = 1em */
+    font-size: 1.75em; /* orig--> 28px, 28px/16 = 1.75em */
     border-right-style: solid;
     border-right-width: thin;
-    padding-right: 1em;
+    padding-right: 1em; /* orig--> 16px, 16px/16 = 1em */
   }
 
   .nav-item {
-    margin-left: 1em;
-    margin-bottom: 1em;
+    margin-left: 1em; /* orig--> 16px, 16px/16 = 1em */
+    margin-bottom: 1em; /* orig--> 16px, 16px/16 = 1em */
   }
 
   .nav {
@@ -140,16 +140,15 @@ html {
   }
 
   #catch-phrase {
-    margin-top: 3em;
-    padding-bottom: 3em;
-    padding-left: 1em;
-    padding-right: 1em;
-
+    margin-top: 3em; /* orig--> 48px, 48px/16 = 3em */
+    padding-bottom: 3em; /* orig--> 48px, 48px/16 = 3em */
+    padding-left: 1em; /* orig--> 16px, 16px/16 = 1em */
+    padding-right: 1em; /* orig--> 16px, 16px/16 = 1em */
   }
 
   #about-heading {
-    padding-top: 1.25em;
-    margin-bottom: 1.5em;
+    padding-top: 1.25em; /* orig--> 20px, 20px/16 = 1.25em */
+    margin-bottom: 1.5em; /* orig--> 24px, 24px/16 = 1.5em */
   }
 
   .article-image {
@@ -161,7 +160,7 @@ html {
 
   .blog-article {
     font-family: verdana, sans-serif;
-    font-size: 1em;
+    font-size: 1em; /* orig--> 16px, 16px/16 = 1em */
     color: white;
     text-align: center;
     border-style: solid;
@@ -170,24 +169,24 @@ html {
     border-right-width: medium;
     margin-left: 16%;
     margin-right: 16%;
-    border-radius: 2em;
+    border-radius: 2em; /* orig--> 32px, 32px/16 = 2em */
     border-color: #7b06f2;
-    margin-bottom: 6em;
-    padding: 2em;
-    box-shadow: 6em green;
+    margin-bottom: 6em; /* orig--> 96px, 96px/16 = 6em */
+    padding: 2em; /* orig--> 32px, 32px/16 = 2em */
+    box-shadow: 6em green; /* orig--> 96px, 96px/16 = 6em */
   }
 
   #blogpage-heading {
-    font-size: 1em;
-    margin-left: 2em;
-    margin-top: 2em;
-    padding-bottom: 3em;
+    font-size: 1em; /* orig--> 16px, 16px/16 = 1em */
+    margin-left: 2em; /* orig--> 32px, 32px/16 = 2em */
+    margin-top: 2em; /* orig--> 32px, 32px/16 = 2em */
+    padding-bottom: 3em; /* orig--> 48px, 48px/16 = 3em */
     color: rgb(140,140,140);
   }
 
   #blog-title {
-    padding-bottom: 0.8em;
-    font-size: 2.5em;
+    padding-bottom: 0.8em; /* orig--> 12.8px, 12.8px/16 = 0.8em */
+    font-size: 2.5em; /* orig--> 40px, 40px/16 = 2.5em */
     font-family: "Sirin Stencil", sans-serif;
     border-bottom-width: thick;
     border-bottom-style: solid;
@@ -198,11 +197,11 @@ html {
 
   .article-title {
     font-family: "Sirin Stencil", sans-serif;
-    font-size: 1.7em;
-    padding-bottom: 0.65em;
+    font-size: 1.7em; /* orig--> 27.2px, 27.2px/16 = 1.7em */
+    padding-bottom: 0.65em; /* orig--> 10.4px, 10.4px/16 = 0.65em */
     color: #06c7f2;
     border-bottom: medium solid #d9039f;
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* orig--> 16px, 16px/16 = 1em */
     margin-left: 25%;
     margin-right: 25%;
   }
@@ -211,7 +210,7 @@ html {
     text-align: justify;
     padding-left: 25%;
     padding-right: 25%;
-    padding-top: 1.5em;
+    padding-top: 1.5em; /* orig--> 24px, 24px/16 = 1.5em */
     color: rgb(165,165,165);
   }
 
@@ -222,20 +221,20 @@ html {
 
 }
 
-@media screen and (min-width: 56.25em) {
+@media screen and (min-width: 56.25em) { /* orig--> 900px, 900px/16 = 56.25em */
   #catch-phrase {
-    margin-top: 5em;
+    margin-top: 5em; /* orig--> 80px, 80px/16 = 5em */
     padding-bottom: 5em;
   }
 
   #about-paragraph {
-    padding-left: 7em;
+    padding-left: 7em; /* orig--> 112px, 112px/16 = 7em */
     padding-right: 7em;
   }
 
   .notice {
-    padding-top: 1em;
-    padding-left: 7em;
+    padding-top: 1em; /* orig--> 16px, 16px/16 = 1em */
+    padding-left: 7em; /* orig--> 112px, 112px/16 = 7em */
     padding-right: 7em;
     text-decoration: underline;
   }
@@ -251,24 +250,24 @@ html {
     border-right-width: medium;
     margin-left: 16%;
     margin-right: 16%;
-    border-radius: 2em;
+    border-radius: 2em; /* orig--> 32px, 32px/16 = 2em */
     border-color: #7b06f2;
-    margin-bottom: 6em;
+    margin-bottom: 6em; /* orig--> 96px, 96px/16 = 6em */
     padding: 2em;
     box-shadow: 6em green;
   }
 
   #blogpage-heading {
     font-size: 1em;
-    margin-left: 2em;
+    margin-left: 2em; /* orig--> 32px, 32px/16 = 2em */
     margin-top: 2em;
-    padding-bottom: 3em;
+    padding-bottom: 3em; /* orig--> 48px, 48px/16 = 3em */
     color: rgb(140,140,140);
   }
 
   #blog-title {
-    padding-bottom: 0.8em;
-    font-size: 2.5em;
+    padding-bottom: 0.8em; /* orig--> 12.8px, 12.8px/16 = 0.8em */
+    font-size: 2.5em; /* orig--> 40px, 40px/16 = 2.5em */
     font-family: "Sirin Stencil", sans-serif;
     border-bottom-width: thick;
     border-bottom-style: solid;
@@ -279,8 +278,8 @@ html {
 
   .article-title {
     font-family: "Sirin Stencil", sans-serif;
-    font-size: 1.7em;
-    padding-bottom: 0.65em;
+    font-size: 1.7em; /* orig--> 27.2px, 27.2px/16 = 1.7em */
+    padding-bottom: 0.65em; /* orig--> 10.4px, 10.4px/16 = 0.65em */
     color: #06c7f2;
     border-bottom: medium solid #d9039f;
     margin-bottom: 1em;
@@ -292,7 +291,7 @@ html {
     text-align: justify;
     padding-left: 25%;
     padding-right: 25%;
-    padding-top: 1.5em;
+    padding-top: 1.5em; /* orig--> 24px, 24px/16 = 1.5em */
     color: rgb(165,165,165);
   }
 
@@ -305,7 +304,7 @@ html {
 
   #page-heading-one {
     font-family: "Sirin Stencil", sans-serif;
-    font-size: 2em;
+    font-size: 2em; /* orig--> 32px, 32px/16 = 2em */
     color: #d9039f;
     margin-left: 2em;
     margin-top: 2em;
@@ -315,16 +314,16 @@ html {
 
   #headshot {
     width: 5%;
-    margin-left: 2em;
+    margin-left: 2em; /* orig--> 32px, 32px/16 = 2em */
     margin-top: 2em;
     border: thick solid #d9039f;
   }
 
   #page-heading-two {
-    margin-left: 7.5em;
+    margin-left: 7.5em; /* orig--> 120px, 120px/16 = 7.5em */
     margin-top: 2em;
     color: rgb(190,190,190);
-    font-size: 1.7em;
+    font-size: 1.7em; /* orig--> 27.2px, 27.2px/16 = 1.7em */
     border-bottom: solid medium #d9039f;
     padding-bottom: 1em;
     margin-right: 25%;
@@ -335,10 +334,10 @@ html {
     font-family: "Sirin Stencil", sans-serif;
     font-size: 1em;
     color: rgb(190,190,190);
-    margin-left: 15.5em;
+    margin-left: 15.5em; /* orig--> 248px, 248px/16 = 15.5em */
     margin-top: 2em;
     margin-right: 25%;
-    margin-bottom: 2em;
+    margin-bottom: 2em; /* orig--> 32px, 32px/16 = 2em */
     text-align: justify;
   }
 
@@ -362,16 +361,16 @@ html {
 
 #page-heading-one {
   font-family: "Sirin Stencil", sans-serif;
-  font-size: 1.45em;
+  font-size: 1.45em; /* orig--> 23.2px, 23.2px/16 = 1.45em */
   color: #d9039f;
-  margin-left: 0.5em;
+  margin-left: 0.5em; /* orig--> 8px, 8px/16 = 0.5em */
   margin-top: 2em;
   display: inline;
   border-bottom: medium solid #06c7f2;
 }
 
 #headshot {
-  width: 6em;
+  width: 6em; /* orig--> 96px, 96px/16 = 6em */
   margin-left: 1em;
   margin-top: 2em;
   border: medium solid #d9039f;
@@ -382,9 +381,9 @@ html {
   margin-left: 1em;
   margin-top: 2em;
   color: rgb(190,190,190);
-  font-size: 1.7em;
+  font-size: 1.7em; /* orig--> 27.2px, 27.2px/16 = 1.7em */
   border-bottom: solid medium #d9039f;
-  padding-bottom: 0.65em;
+  padding-bottom: 0.65em; /* orig--> 10.4px, 10.4px/16 = 0.65em */
   margin-right: 25%;
   font-family: "Sirin Stencil", sans-serif;
 }
@@ -430,24 +429,24 @@ h3 {
   border-right-width: medium;
   margin-left: 16%;
   margin-right: 16%;
-  border-radius: 2em;
+  border-radius: 2em; /* orig--> 32px, 32px/16 = 2em */
   border-color: #7b06f2;
-  margin-bottom: 6em;
+  margin-bottom: 6em; /* orig--> 96px, 96px/16 = 6em */
   padding: 2em;
   box-shadow: 6em green;
 }
 
 #blogpage-heading {
-  font-size: 0.75em;
+  font-size: 0.75em; /* orig--> 12px, 12px/16 = 0.75em */
   margin-left: 2em;
   margin-top: 2em;
-  padding-bottom: 3em;
+  padding-bottom: 3em; /* orig--> 48px, 48px/16 = 3em */
   color: rgb(140,140,140);
 }
 
 #blog-title {
-  padding-bottom: 0.8em;
-  font-size: 2.5em;
+  padding-bottom: 0.8em; /* orig--> 12.8px, 12.8px/16 = 0.8em */
+  font-size: 2.5em; /* orig--> 40px, 40px/16 = 2.5em */
   font-family: "Sirin Stencil", sans-serif;
   border-bottom-width: thick;
   border-bottom-style: solid;
@@ -458,8 +457,8 @@ h3 {
 
 .article-title {
   font-family: "Sirin Stencil", sans-serif;
-  font-size: 1.25em;
-  padding-bottom: 0.65em;
+  font-size: 1.25em; /* orig--> 20px, 20px/16 = 1.25em */
+  padding-bottom: 0.65em; /* orig--> 10.4px, 10.4px/16 = 0.65em */
   color: #06c7f2;
   border-bottom: medium solid #d9039f;
   margin-bottom: 1em;
@@ -469,16 +468,16 @@ h3 {
 }
 
 .placeholder-text {
-  font-size: 0.85em;
+  font-size: 0.85em; /* orig--> 13.6px, 13.6px/16 = 0.85em */
   text-align: justify;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 1.5em;
+  padding-top: 1.5em; /* orig--> 24px, 24px/16 = 1.5em */
   color: rgb(165,165,165);
 }
 
 .active {
-  font-size: 1.2em;
+  font-size: 1.2em; /* orig--> 19.2px, 19.2px/16 = 1.2em */
   color: #06c7f2;
 }
 
