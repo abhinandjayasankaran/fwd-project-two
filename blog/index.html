@@ -1,38 +1,36 @@
-<!--
-This is the blog page which is named blog.html and it will serve my blog posts to the viewers
-Author: Abhinand Jayasankaran
-Email: abhinandjayasankaran@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="/assets/screen.css"/>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.jpg"/>
     <title>Abhinand - Blog</title>
 </head>
 
 <body>
-    <header id="header">
+    <header class="header">
         <nav class="navbar">
-            <h1>AJ's Website</h1>
-            <ul>
+            <a href="../"><h1 id="site-heading">AJ's Website</h1></a>
+            <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="../">Home</a>
+                    <a class="nav-link" href="../">Home</a>
                 </li>
                 <li class="nav-item">
-                    <p class="nav-link">Blog</p>
+                    <p class="nav-link active">Blog</p>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../resume">Resume</a>
                 </li>
             </ul>
         </nav>
+        <h1 id="catch-phrase">Welcome To My Blog</h1>
     </header>
 
     <main id="main-content">
         <section id="blogpage-heading">
-            <h1>Abhi's Blog</h1>
+            <h1 id="blog-title">Abhi's Blog</h1>
             <h2>Currently under development and will be updating soon with more content!</h2>
         </section>
 
@@ -40,9 +38,19 @@ Email: abhinandjayasankaran@gmail.com
 <!-- During the later stages of dev javascript,php, or python will be used to serve dynamic content instead-->
 
         <article class="blog-article">
-            <h2>Article Title</h2>
-            <img class="article-image" src="../assets/img/Insert-Photo-Here.jpg" alt="article image"/>
-            <p>This is an example of a peak view into a blog post. This will be used to provide an introduction of the article I post.</p>
+            <h2 class="article-title">Article Title</h2>
+            <img class="article-image" src="../assets/img/article1.jpg" alt="article image"/>
+            <section class="placeholder-text" lang="la">
+                <h4>Now Let's Speak Some Latin</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </section>
+        </article>
+
+        <article class="blog-article">
+            <h2 class="article-title">Article Title</h2>
+            <img class="article-image" src="../assets/img/article2.jpg" alt="article image"/>
             <section class="placeholder-text" lang="la">
                 <h4>Now Let's Speak Some Latin</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
@@ -52,21 +60,8 @@ Email: abhinandjayasankaran@gmail.com
         </article>
 
         <article class="blog-article">
-            <h2>Article Title</h2>
-            <img class="article-image" src="../assets/img/Insert-Photo-Here.jpg" alt="article image"/>
-            <p>This is an example of a peak view into a blog post. This will be used to provide an introduction of the article I post.</p>
-            <section class="placeholder-text" lang="la">
-                <h4>Now Let's Speak Some Latin</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </section>
-        </article>
-
-        <article class="blog-article">
-            <h2>Article Title</h2>
-            <img class="article-image" src="../assets/img/Insert-Photo-Here.jpg" alt="article image"/>
-            <p>This is an example of a peak view into a blog post. This will be used to provide an introduction of the article I post.</p>
+            <h2 class="article-title">Article Title</h2>
+            <img class="article-image" src="../assets/img/article3.png" alt="article image"/>
             <section class="placeholder-text" lang="la">
                 <h4>Now Let's Speak Some Latin</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
