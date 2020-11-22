@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Sirin+Stencil");
 @import url("#//basehold.it/24");
 
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -11,7 +10,7 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-/* Begin site styles below */
+/*--------------- Base Styles -------------------------*/
 
 html {
   font-family: "Sirin Stencil", sans-serif, sans-serif;
@@ -21,35 +20,31 @@ html {
   background: url("../assets/img/black-background.jpeg");
   background-repeat: repeat;
   max-width: 100%;
-
 }
 
-@keyframes fadeInLoad {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+h3 {
+  font-size: 2em;
+  font-family: "Sirin Stencil", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #06c7f2;
+  margin-bottom: 1em;
+}
+
+h4 {
+  padding-top: 1em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1em;
 }
 
 
-.header {
-  background: linear-gradient(353deg, #d9039f, #7b06f2, #06c7f2);
-  padding-top: 0.15em; /* In Pixels--> 2.4px, 2.4px/16 = em */
-  height: auto;
-  animation: fadeInLoad 2.5s;
-}
-
-.navbar {
-  max-width: 100%;
-  height: 12em; /* In Pixels--> 192px, 192px/16 = em */
-  border-radius: 3.75em; /* In Pixels--> 60px, 60px/16 = 3.75em */
-  background: url("../assets/img/black-background.jpeg");
-  margin-left: 0.15em; /* In Pixels--> 2.4px, 2.4px/16 = 0.15em */
-  margin-right: 0.13em; /* In Pixels--> 2.0px, 2.0px/16 = 0.13em */
-  animation: fadeInLoad 2s;
-}
+/*--------------------- Main Layout ----------------------------*/
 
 #site-heading {
   font: "Sirin Stencil", sans-serif;
@@ -57,24 +52,6 @@ html {
   font-size: 1.75em; /* In Pixels--> 28px, 28px/16 = 1.75em */
   padding-top: 0.65em; /* In Pixels--> 10.4px, 10.4px/16 = 0.65em */
   text-align: center;
-}
-
-.nav-item {
-  font-family: Lora, sans-serif;
-  font-size: 1em; /* In Pixels--> 16px, 16px/16 = 1em */
-  color: rgb(255,255,255);
-  margin-top: 1em; /* In Pixels--> 16px, 16px/16 = 1em */
-  margin-left: 3.75em; /* In Pixels--> 60px, 60px/16 = 3.75em */
-  border-bottom-style: solid;
-  border-bottom-width: medium;
-  border-color: #7b06f2;
-  margin-right: 3em; /* In Pixels--> 48px, 48px/16 = 3em */
-}
-
-.nav-link {
-  font-family: verdana, sans-serif;
-  font-size: 1em; /* In Pixels--> 16px, 16px/16 = 1em */
-  color: #FC0FC0;
 }
 
 #catch-phrase {
@@ -86,7 +63,6 @@ html {
   padding-bottom: 1.5em; /* In Pixels--> 24px, 24px/16 = 1.5em */
   color: rgb(230,230,230);
 }
-
 
 #about-heading {
   text-align: center;
@@ -113,6 +89,165 @@ html {
   font-weight: 450;
   padding-left: 1em; /* In Pixels--> 16px, 16px/16 = 1em */
 }
+
+/*------------------------ Main Modules -------------------------*/
+
+.header {
+  background: linear-gradient(353deg, #d9039f, #7b06f2, #06c7f2);
+  padding-top: 0.15em; /* In Pixels--> 2.4px, 2.4px/16 = em */
+  height: auto;
+  animation: fadeInLoad 2.5s;
+}
+
+.navbar {
+  max-width: 100%;
+  height: 12em; /* In Pixels--> 192px, 192px/16 = em */
+  border-radius: 3.75em; /* In Pixels--> 60px, 60px/16 = 3.75em */
+  background: url("../assets/img/black-background.jpeg");
+  margin-left: 0.15em; /* In Pixels--> 2.4px, 2.4px/16 = 0.15em */
+  margin-right: 0.13em; /* In Pixels--> 2.0px, 2.0px/16 = 0.13em */
+  animation: fadeInLoad 2s;
+}
+
+.nav-item {
+  font-family: Lora, sans-serif;
+  font-size: 1em; /* In Pixels--> 16px, 16px/16 = 1em */
+  color: rgb(255,255,255);
+  margin-top: 1em; /* In Pixels--> 16px, 16px/16 = 1em */
+  margin-left: 3.75em; /* In Pixels--> 60px, 60px/16 = 3.75em */
+  border-bottom-style: solid;
+  border-bottom-width: medium;
+  border-color: #7b06f2;
+  margin-right: 3em; /* In Pixels--> 48px, 48px/16 = 3em */
+}
+
+.nav-link {
+  font-family: verdana, sans-serif;
+  font-size: 1em; /* In Pixels--> 16px, 16px/16 = 1em */
+  color: #FC0FC0;
+}
+
+/*------------------------------ Blog Layout -----------------------------*/
+
+
+#blogpage-heading {
+  font-size: 0.75em; /* In Pixels--> 12px, 12px/16 = 0.75em */
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-bottom: 3em; /* In Pixels--> 48px, 48px/16 = 3em */
+  color: rgb(140,140,140);
+}
+
+#blog-title {
+  padding-bottom: 0.8em; /* In Pixels--> 12.8px, 12.8px/16 = 0.8em */
+  font-size: 2.5em; /* In Pixels--> 40px, 40px/16 = 2.5em */
+  font-family: "Sirin Stencil", sans-serif;
+  border-bottom-width: thick;
+  border-bottom-style: solid;
+  border-bottom-color: #06c7f2;
+  margin-right: 70%;
+  color: #d9039f;
+}
+
+
+/*------------------------------ Blog Modules ----------------------------*/
+
+
+.blog-article {
+  font-family: verdana, sans-serif;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  border-right-style: solid;
+  border-right-width: medium;
+  margin-left: 16%;
+  margin-right: 16%;
+  border-radius: 2em; /* In Pixels--> 32px, 32px/16 = 2em */
+  border-color: #7b06f2;
+  margin-bottom: 6em; /* In Pixels--> 96px, 96px/16 = 6em */
+  padding: 2em;
+  box-shadow: 6em green;
+}
+
+.article-image {
+  border: double thick #06c7f2;
+  box-shadow: 0 0 5em rgba(255, 255, 255, 0.5);
+  filter: brightness(70%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.article-title {
+  font-family: "Sirin Stencil", sans-serif;
+  font-size: 1.25em; /* In Pixels--> 20px, 20px/16 = 1.25em */
+  padding-bottom: 0.65em; /* In Pixels--> 10.4px, 10.4px/16 = 0.65em */
+  color: #06c7f2;
+  border-bottom: medium solid #d9039f;
+  margin-bottom: 1em;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.placeholder-text {
+  font-size: 0.85em; /* In Pixels--> 13.6px, 13.6px/16 = 0.85em */
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5em; /* In Pixels--> 24px, 24px/16 = 1.5em */
+  color: rgb(165,165,165);
+}
+
+
+/*------------------------ Resume Layout ---------------------------*/
+
+#page-heading-one {
+  font-family: "Sirin Stencil", sans-serif;
+  font-size: 1.45em; /* In Pixels--> 23.2px, 23.2px/16 = 1.45em */
+  color: #d9039f;
+  margin-left: 0.5em; /* In Pixels--> 8px, 8px/16 = 0.5em */
+  margin-top: 2em;
+  display: inline;
+  border-bottom: medium solid #06c7f2;
+}
+
+#headshot {
+  width: 6em; /* In Pixels--> 96px, 96px/16 = 6em */
+  margin-left: 1em;
+  margin-top: 2em;
+  border: medium solid #d9039f;
+}
+
+#page-heading-two {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 2em;
+  color: rgb(190,190,190);
+  font-size: 1.7em; /* In Pixels--> 27.2px, 27.2px/16 = 1.7em */
+  border-bottom: solid medium #d9039f;
+  padding-bottom: 0.65em; /* In Pixels--> 10.4px, 10.4px/16 = 0.65em */
+  margin-right: 25%;
+  font-family: "Sirin Stencil", sans-serif;
+}
+
+#personal-profile, #education, #project-experience, #technical-skills, #language-section, #contact-details {
+  font-family: "Sirin Stencil", sans-serif;
+  font-size: 1em;
+  color: rgb(190,190,190);
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-right: 2em;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+
+/*-----------------------Begining of Screen Media----------------------------*/
+/*---------------------------576px Screen Size-------------------------------*/
 
 @media screen and (min-width: 36em) { /* In Pixels--> 576px, 576px/16 = 36em */
   .navbar {
@@ -220,6 +355,9 @@ html {
   }
 
 }
+/*xxxxxxxxxxxxxxxxxxxxxxxxx-End of 576px Sceen Size-xxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/*-----------------------------900px Screen Size-----------------------------*/
 
 @media screen and (min-width: 56.25em) { /* In Pixels--> 900px, 900px/16 = 56.25em */
   #catch-phrase {
@@ -302,179 +440,24 @@ html {
     width: 50%;
   }
 
-  #page-heading-one {
-    font-family: "Sirin Stencil", sans-serif;
-    font-size: 2em; /* In Pixels--> 32px, 32px/16 = 2em */
-    color: #d9039f;
-    margin-left: 2em;
-    margin-top: 2em;
-    display: inline;
-    border-bottom: medium solid #06c7f2;
-  }
-
-  #headshot {
-    width: 5%;
-    margin-left: 2em; /* In Pixels--> 32px, 32px/16 = 2em */
-    margin-top: 2em;
-    border: thick solid #d9039f;
-  }
-
-  #page-heading-two {
-    margin-left: 7.5em; /* In Pixels--> 120px, 120px/16 = 7.5em */
-    margin-top: 2em;
-    color: rgb(190,190,190);
-    font-size: 1.7em; /* In Pixels--> 27.2px, 27.2px/16 = 1.7em */
-    border-bottom: solid medium #d9039f;
-    padding-bottom: 1em;
-    margin-right: 25%;
-    font-family: "Sirin Stencil", sans-serif;
-  }
-
-  #personal-profile, #education, #project-experience, #technical-skills, #language-section, #contact-details {
-    font-family: "Sirin Stencil", sans-serif;
-    font-size: 1em;
-    color: rgb(190,190,190);
-    margin-left: 15.5em; /* In Pixels--> 248px, 248px/16 = 15.5em */
-    margin-top: 2em;
-    margin-right: 25%;
-    margin-bottom: 2em; /* In Pixels--> 32px, 32px/16 = 2em */
-    text-align: justify;
-  }
-
   h3 {
     font-size: 2em;
     font-family: "Sirin Stencil", sans-serif;
     text-decoration: underline;
     text-decoration-color: #06c7f2;
     margin-bottom: 1em;
-
   }
 
   .blog-article:hover {
     transition: all 0.2s;
     transform: scale(1.05);
   }
-
 }
 
-/*--------------End of Media Screen---------------*/
+/*------------------------End of Media Screen 900px--------------------------*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxx-End of Media Queries-xxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
-#page-heading-one {
-  font-family: "Sirin Stencil", sans-serif;
-  font-size: 1.45em; /* In Pixels--> 23.2px, 23.2px/16 = 1.45em */
-  color: #d9039f;
-  margin-left: 0.5em; /* In Pixels--> 8px, 8px/16 = 0.5em */
-  margin-top: 2em;
-  display: inline;
-  border-bottom: medium solid #06c7f2;
-}
-
-#headshot {
-  width: 6em; /* In Pixels--> 96px, 96px/16 = 6em */
-  margin-left: 1em;
-  margin-top: 2em;
-  border: medium solid #d9039f;
-}
-
-#page-heading-two {
-  text-align: left;
-  margin-left: 1em;
-  margin-top: 2em;
-  color: rgb(190,190,190);
-  font-size: 1.7em; /* In Pixels--> 27.2px, 27.2px/16 = 1.7em */
-  border-bottom: solid medium #d9039f;
-  padding-bottom: 0.65em; /* In Pixels--> 10.4px, 10.4px/16 = 0.65em */
-  margin-right: 25%;
-  font-family: "Sirin Stencil", sans-serif;
-}
-
-#personal-profile, #education, #project-experience, #technical-skills, #language-section, #contact-details {
-  font-family: "Sirin Stencil", sans-serif;
-  font-size: 1em;
-  color: rgb(190,190,190);
-  margin-left: 2em;
-  margin-top: 2em;
-  padding-right: 2em;
-  margin-bottom: 2em;
-  text-align: justify;
-}
-
-h3 {
-  font-size: 2em;
-  font-family: "Sirin Stencil", sans-serif;
-  text-decoration: underline;
-  text-decoration-color: #06c7f2;
-  margin-bottom: 1em;
-}
-
-
-.article-image {
-  border: double thick #06c7f2;
-  box-shadow: 0 0 5em rgba(255, 255, 255, 0.5);
-  filter: brightness(70%);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.blog-article {
-  font-family: verdana, sans-serif;
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  border-style: solid;
-  border-width: medium;
-  border-right-style: solid;
-  border-right-width: medium;
-  margin-left: 16%;
-  margin-right: 16%;
-  border-radius: 2em; /* In Pixels--> 32px, 32px/16 = 2em */
-  border-color: #7b06f2;
-  margin-bottom: 6em; /* In Pixels--> 96px, 96px/16 = 6em */
-  padding: 2em;
-  box-shadow: 6em green;
-}
-
-#blogpage-heading {
-  font-size: 0.75em; /* In Pixels--> 12px, 12px/16 = 0.75em */
-  margin-left: 2em;
-  margin-top: 2em;
-  padding-bottom: 3em; /* In Pixels--> 48px, 48px/16 = 3em */
-  color: rgb(140,140,140);
-}
-
-#blog-title {
-  padding-bottom: 0.8em; /* In Pixels--> 12.8px, 12.8px/16 = 0.8em */
-  font-size: 2.5em; /* In Pixels--> 40px, 40px/16 = 2.5em */
-  font-family: "Sirin Stencil", sans-serif;
-  border-bottom-width: thick;
-  border-bottom-style: solid;
-  border-bottom-color: #06c7f2;
-  margin-right: 70%;
-  color: #d9039f;
-}
-
-.article-title {
-  font-family: "Sirin Stencil", sans-serif;
-  font-size: 1.25em; /* In Pixels--> 20px, 20px/16 = 1.25em */
-  padding-bottom: 0.65em; /* In Pixels--> 10.4px, 10.4px/16 = 0.65em */
-  color: #06c7f2;
-  border-bottom: medium solid #d9039f;
-  margin-bottom: 1em;
-  margin-left: 2%;
-  margin-right: 2%;
-
-}
-
-.placeholder-text {
-  font-size: 0.85em; /* In Pixels--> 13.6px, 13.6px/16 = 0.85em */
-  text-align: justify;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1.5em; /* In Pixels--> 24px, 24px/16 = 1.5em */
-  color: rgb(165,165,165);
-}
+/*--------------------------- State Rules -----------------------------*/
 
 .active {
   font-size: 1.2em; /* In Pixels--> 19.2px, 19.2px/16 = 1.2em */
@@ -485,19 +468,17 @@ h3 {
   color: #06c7f2;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 1em;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-h4 {
-  padding-top: 1em;
-}
-
 #site-heading:hover {
   color: #06c7f2;
+}
+
+/*--------------------------- Animations ---------------------------*/
+
+@keyframes fadeInLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
