@@ -17,4 +17,5 @@ This repo contains my project work (two) for fundamentals of web development. Th
 + # --------------------
 
 + Media Queries are adjusted to be better at wrapping text for certain screen sizes.
++ A new feature using js is added to display live date on the navbar.
 ```
