@@ -54,6 +54,10 @@ ul {
   text-align: center;
 }
 
+#date{
+  display: none;
+}
+
 #catch-phrase {
   text-align: center;
   font-family: "Sirin Stencil", sans-serif;
@@ -160,8 +164,6 @@ ul {
   text-align: center;
   border-style: solid;
   border-width: medium;
-  border-right-style: solid;
-  border-right-width: medium;
   margin-left: 16%;
   margin-right: 16%;
   border-radius: 2em; /* In Pixels--> 32px, 32px/16 = 2em */
@@ -176,8 +178,6 @@ ul {
   box-shadow: 0 0 5em rgba(255, 255, 255, 0.5);
   filter: brightness(70%);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
 }
 
@@ -300,8 +300,6 @@ ul {
     text-align: center;
     border-style: solid;
     border-width: medium;
-    border-right-style: solid;
-    border-right-width: medium;
     margin-left: 16%;
     margin-right: 16%;
     border-radius: 2em; /* In Pixels--> 32px, 32px/16 = 2em */
@@ -365,6 +363,12 @@ ul {
     padding-bottom: 5em;
   }
 
+  #date {
+    display: inline;
+    color: white;
+    margin-top: 1em;
+  }
+
   #about-paragraph {
     padding-left: 7em; /* In Pixels--> 112px, 112px/16 = 7em */
     padding-right: 7em;
@@ -412,6 +416,10 @@ ul {
     border-bottom-color: #06c7f2;
     margin-right: 70%;
     color: #d9039f;
+  }
+
+  #personal-profile {
+    max-width: 56.25em; /* In pixels--> 900 px, 900px/16 = 56.25em */
   }
 
   .article-title {
